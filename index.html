@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" data-theme="light">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Undangan Pernikahan — Raka & Anindya</title>
+<title>Undangan Pernikahan — Muhammad Hafizh & Siti Salasiah</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
@@ -40,7 +40,7 @@ section{padding:80px 24px;max-width:760px;margin:0 auto;text-align:center}
 #cover{position:fixed;inset:0;z-index:50;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;
   background:radial-gradient(circle at 50% 30%,var(--hero),var(--bg));transition:transform 1s ease,opacity 1s ease}
 #cover.hide{transform:translateY(-100%);opacity:0;pointer-events:none}
-#cover .names{font-size:clamp(3rem,13vw,5.5rem);line-height:1.1;margin:10px 0}
+#cover .names{font-size:clamp(2.2rem,9vw,4rem);line-height:1.1;margin:10px 0}
 #cover .to{margin-top:34px;font-size:.85rem;color:var(--muted)}
 #cover .to b{display:block;font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:600;color:var(--text);margin-top:4px}
 .btn{display:inline-block;margin-top:26px;padding:13px 30px;border:1px solid var(--accent);color:var(--accent);background:transparent;
@@ -50,7 +50,7 @@ section{padding:80px 24px;max-width:760px;margin:0 auto;text-align:center}
 
 /* Hero */
 #hero{min-height:100vh;min-height:100dvh;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:center;max-width:none;background:linear-gradient(var(--hero),var(--bg))}
-#hero .names{font-size:clamp(3.4rem,15vw,6.5rem);line-height:1.05;margin:14px 0}
+#hero .names{font-size:clamp(2.4rem,10vw,6rem);line-height:1.05;margin:14px 0}
 #hero .date{font-family:'Cormorant Garamond',serif;font-size:1.5rem;letter-spacing:.08em}
 .count{display:flex;justify-content:center;gap:12px;margin-top:34px;flex-wrap:wrap}
 .count div{min-width:72px;padding:14px 8px;background:var(--surface);border:1px solid var(--line);border-radius:14px}
@@ -120,6 +120,12 @@ html{-webkit-text-size-adjust:100%}
 .petal{position:absolute;top:-30px;left:var(--x);width:var(--w);height:calc(var(--w)*1.3);background:var(--accent2);opacity:.45;border-radius:100% 0 100% 0;pointer-events:none;animation:fall var(--t) linear infinite;animation-delay:var(--d)}
 #hero .names{background:linear-gradient(90deg,var(--accent),var(--accent2),var(--accent));background-size:200% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;animation:flow 6s linear infinite}
 .tk{animation:tick .5s ease}
+.nm2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;color:var(--accent)}
+.nm2 span{display:block}
+.nm2 small{display:block;font:400 .36em 'Montserrat',system-ui,sans-serif;letter-spacing:.12em;color:var(--muted);margin-top:6px}
+.nm2 .amp{display:block;font:400 1.1em 'Great Vibes','Brush Script MT',cursive;color:var(--accent2);margin:8px 0}
+#cover .names.nm2{font-size:clamp(2rem,9vw,3rem);line-height:1.2}
+#hero .names.nm2{font-size:clamp(2.2rem,9vw,4rem);line-height:1.2;background:none;-webkit-text-fill-color:var(--accent);color:var(--accent);animation:none}
 .avatar{animation:ring 3s ease-out infinite}
 .story div::before{animation:dot 2.4s ease-in-out infinite}
 .couple .reveal:nth-child(1):not(.in){transform:translateX(-40px)}
@@ -163,8 +169,8 @@ footer .script{font-size:2.6rem;display:block}
 
 <div id="cover">
   <div class="eyebrow">Undangan Pernikahan</div>
-  <h1 class="names script">Raka &amp; Anindya</h1>
-  <div class="date" style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;letter-spacing:.1em">Sabtu, 16 Januari 2027</div>
+  <h1 class="names nm2"><span>Muhammad Hafizh<small>S.Pd</small></span><i class="amp">&amp;</i><span>Siti Salasiah<small>S.AP</small></span></h1>
+  <div class="date" style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;letter-spacing:.1em">Minggu, 31 Januari 2027</div>
   <div class="to">Kepada Yth.<b id="guest">Bapak/Ibu/Saudara/i</b></div>
   <button class="btn solid" id="open">Buka Undangan</button>
 </div>
@@ -172,8 +178,8 @@ footer .script{font-size:2.6rem;display:block}
 <main>
 <section id="hero">
   <div class="eyebrow reveal">Kami Akan Menikah</div>
-  <h1 class="names script reveal">Raka &amp; Anindya</h1>
-  <div class="date reveal">16 · 01 · 2027</div>
+  <h1 class="names nm2 reveal"><span>Muhammad Hafizh<small>S.Pd</small></span><i class="amp">&amp;</i><span>Siti Salasiah<small>S.AP</small></span></h1>
+  <div class="date reveal">31 · 01 · 2027</div>
   <div class="count reveal" id="count" aria-live="off">
     <div><b id="d">0</b><span>Hari</span></div>
     <div><b id="h">0</b><span>Jam</span></div>
@@ -184,9 +190,9 @@ footer .script{font-size:2.6rem;display:block}
 
 <section>
   <div class="eyebrow reveal">Bismillahirrahmanirrahim</div>
-  <h2 class="reveal" style="font-size:2rem;margin-top:10px">Dengan Rahmat Tuhan Yang Maha Esa</h2>
+  <h2 class="reveal" style="font-size:2rem;margin-top:10px">Assalamualaikum Warahmatullahi Wabarakatuh</h2>
   <div class="divider"></div>
-  <p class="reveal">Dengan penuh syukur dan kebahagiaan, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dan memberikan doa restu pada hari bahagia kami.</p>
+  <p class="reveal">Dengan memohon Ridho dan Rahmat Allah SWT, kami mengundang Bapak/Ibu/Saudara/i untuk hadir pada pernikahan kami.</p>
   <p class="reveal" style="font-style:italic;color:var(--muted)">Di antara tanda kebesaran-Nya, Allah menciptakan pasangan bagimu agar kamu merasa tenteram, lalu menumbuhkan kasih dan sayang di antara kalian.<br>— QS. Ar-Rum: 21</p>
 </section>
 
@@ -211,22 +217,20 @@ footer .script{font-size:2.6rem;display:block}
   <div class="cards">
     <div class="card reveal">
       <h3>Akad Nikah</h3>
-      <div class="t">Jumat | 15 . 01 . 2027</div>
-      <p>Pukul 09.00 WITA s.d. selesai</p>
-      <p><b>Kantor Urusan Agama (KUA) Contoh</b><br>Jl. Contoh No. 1, Banjarmasin</p>
-      <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=KUA+Banjarmasin">Google Maps</a>
+      <div class="t">Minggu | 06 . 12 . 2026</div>
+      <p>Pukul 11.00 WIB s.d. selesai</p>
+      <p><b>Alamat</b><br>Jl.Desa Sungai Lengi</p>
+      <a class="btn" target="_blank" rel="noopener" href="https://maps.app.goo.gl/T2zdkf5FWL5W9FLa8">Google Maps</a>
     </div>
     <div class="card reveal">
       <h3>Resepsi</h3>
-      <div class="t">Sabtu | 16 . 01 . 2027</div>
-      <p>Pukul 08.00 WITA s.d. selesai</p>
-      <p><b>Gedung Mahligai Banua</b><br>Jl. Contoh Alamat No. 123, Banjarmasin</p>
-      <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Banjarmasin+gedung+pernikahan">Google Maps</a>
+      <div class="t">Minggu | 31 . 01 . 2027</div>
+      <p>Pukul 09.00 WIB s.d. selesai</p>
+      <p><b>Alamat</b><br>Jl. Sutoyo S Komp. Pondok Indah, Banjarmasin</p>
+      <a class="btn" target="_blank" rel="noopener" href="https://maps.app.goo.gl/LtBc5JYhx6UP5Tx88">Google Maps</a>
     </div>
   </div>
-  <div class="place reveal">
-    <a class="btn solid" id="cal" href="#" download="pernikahan-raka-anindya.ics">Simpan Tanggal</a>
-  </div>
+
 </section>
 
 <section>
@@ -240,18 +244,18 @@ footer .script{font-size:2.6rem;display:block}
   <h2 class="reveal script" style="font-size:3rem">Mempelai</h2>
   <div class="couple">
     <div class="reveal">
-      <div class="avatar">R</div>
-      <h3>Raka Pratama, S.T.</h3>
-      <p>Putra dari</p>
-      <p>Bapak Hendra Pratama &amp; Ibu Sari Wulandari</p>
-      <p style="color:var(--accent)">@raka.pratama</p>
+      <div class="avatar">M</div>
+      <h3>Muhammad Hafizh, S.Pd</h3>
+      <p>Putra ke-1 dari</p>
+      <p>Bapak Ali Parhan, S.Ag dan Ibu Nordahliana, S.Ag</p>
+      
     </div>
     <div class="reveal">
-      <div class="avatar">A</div>
-      <h3>Anindya Putri, S.Ked.</h3>
-      <p>Putri dari</p>
-      <p>Bapak Surya Kusuma &amp; Ibu Dewi Lestari</p>
-      <p style="color:var(--accent)">@anindya.putri</p>
+      <div class="avatar">S</div>
+      <h3>Siti Salasiah, S.AP</h3>
+      <p>Putri ke-5 dari</p>
+      <p>Bapak Helmani (alm) dan Ibu Hamdah</p>
+      
     </div>
   </div>
 </section>
@@ -270,7 +274,7 @@ footer .script{font-size:2.6rem;display:block}
   <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu.</p>
   <p>Atas kehadiran, doa, dan restu yang diberikan, kami ucapkan terima kasih yang sebesar-besarnya.</p>
   <p>Wassalamualaikum warahmatullahi wabarakatuh.</p>
-  <span class="script">Raka &amp; Anindya</span>
+  <span class="script">Muhammad Hafizh &amp; Siti Salasiah</span>
   <p>Kami yang berbahagia, beserta keluarga besar</p>
 </footer>
 
@@ -281,7 +285,7 @@ footer .script{font-size:2.6rem;display:block}
 
 <script>
 /* ====== EDIT DI SINI ====== */
-const WEDDING = new Date("2027-01-16T08:00:00+08:00"); // waktu WITA
+const WEDDING = new Date("2027-01-31T09:00:00+07:00"); // 09.00 WIB
 const WA_NUMBER = "6281234567890";                      // nomor WhatsApp penerima RSVP
 /* ========================== */
 
@@ -318,8 +322,10 @@ document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
 
 // ====== Musik latar (disintesis dengan Web Audio, tanpa file eksternal) ======
 let ctx, master, timer, nextT = 0, bar = 0, playing = false, custom = null;
-const chords = [[261.63,329.63,392.0],[220.0,261.63,329.63],[174.61,220.0,261.63],[196.0,246.94,293.66]];
-const bass   = [130.81,110.0,87.31,98.0];
+const chords = [[293.66,369.99,440],[220,277.18,329.63],[246.94,293.66,369.99],[185,220,277.18],[196,246.94,293.66],[293.66,369.99,440],[196,246.94,293.66],[220,277.18,329.63]];
+const mel = [739.99,659.25,587.33,554.37,493.88,440,493.88,554.37];
+function padNote(f,t,dur,vol){const o=ctx.createOscillator(),g=ctx.createGain(),lp=ctx.createBiquadFilter();o.type="sawtooth";o.frequency.value=f;lp.type="lowpass";lp.frequency.value=900;g.gain.setValueAtTime(0.0001,t);g.gain.exponentialRampToValueAtTime(vol,t+1.2);g.gain.setValueAtTime(vol,t+dur-1.4);g.gain.exponentialRampToValueAtTime(0.0001,t+dur);o.connect(lp);lp.connect(g);g.connect(master);o.start(t);o.stop(t+dur+0.05);}
+const bass = [146.83,110,123.47,92.5,98,146.83,98,110];
 function setupAudio(){
   const AC = window.AudioContext || window.webkitAudioContext;
   ctx = new AC();
@@ -340,11 +346,13 @@ function note(f, t, dur, vol, type){
   o.start(t); o.stop(t+dur+0.05);
 }
 function schedule(){
-  const beat = 0.5, pattern = [0,1,2,1,2,1,2,1];
+  const beat = 0.6, pattern = [0,1,2,1,2,1,2,1];
   while(nextT < ctx.currentTime + 2){
-    const c = chords[bar % 4];
-    note(bass[bar % 4], nextT, 3.6, 0.16, "sine");
-    pattern.forEach((p,i)=>note(c[p]*2, nextT + i*beat, 1.4, 0.07, "triangle"));
+    const c = chords[bar % 8];
+    note(bass[bar % 8], nextT, 4.6, 0.18, "sine");
+    c.forEach(f=>{padNote(f,nextT,4.8,0.035);padNote(f*1.004,nextT,4.8,0.025);});
+    note(mel[bar % 8], nextT, 3.2, 0.06, "sine");
+    pattern.forEach((p,i)=>note(c[p]*2, nextT + i*beat, 1.8, 0.065, "triangle"));
     if(bar % 4 === 3) note(c[2]*4, nextT + 3*beat, 2, 0.03, "sine");
     nextT += pattern.length * beat; bar++;
   }
@@ -413,7 +421,7 @@ const rsvpForm = document.getElementById("form"); if(rsvpForm) rsvpForm.onsubmit
   const fmt = d => d.toISOString().replace(/[-:]/g,"").split(".")[0] + "Z";
   const end = new Date(WEDDING.getTime() + 6*36e5);
   const ics = ["BEGIN:VCALENDAR","VERSION:2.0","BEGIN:VEVENT","SUMMARY:Pernikahan Raka & Anindya","DTSTART:"+fmt(WEDDING),"DTEND:"+fmt(end),"LOCATION:Gedung Mahligai Banua\\, Banjarmasin","END:VEVENT","END:VCALENDAR"].join("\r\n");
-  document.getElementById("cal").href = "data:text/calendar;charset=utf-8," + encodeURIComponent(ics);
+
 })();
 </script>
 </body>
